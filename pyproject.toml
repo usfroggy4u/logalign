@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usfroggy4u-logalign"
+version = "0.1.0"
+description = "按时间窗与标识比对两边内容，标出只有一边有记录的情况"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "usfroggy4u" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://usfroggy4u.github.io"
+Repository = "https://github.com/usfroggy4u/logalign"
+Issues = "https://github.com/usfroggy4u/logalign/issues"
+
+[project.scripts]
+logalign = "logalign:main"
+
+[tool.setuptools]
+py-modules = ["logalign"]
